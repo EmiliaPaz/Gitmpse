@@ -1,19 +1,16 @@
 import React from 'react'
 import { Container, Header, Segment } from 'semantic-ui-react'
+import './style.css'
 
 const Title = () => (
     <div>
         <Container>
-            <Header as='h1' color='orange'> Gitmpse </Header>
-            <p> A GitHub glimpse </p>
+            <Header as='h1' color='olive'> 
+                Gitmpse 
+                <Header.Subheader className="subheader">A GitHub glimpse</Header.Subheader>
+            </Header>
+           
         </Container>
-
-
-        {/* <Segment.Group raised>
-            <Segment>Left</Segment>
-            <Segment>Middle</Segment>
-            <Segment>Right</Segment>
-        </Segment.Group> */}
         
     </div>
 )

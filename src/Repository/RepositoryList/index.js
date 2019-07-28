@@ -34,7 +34,7 @@ const RepositoryList = ({ repositories, loading, fetchMore }) =>
         <Container>
             <Segment.Group raised>     
                 {repositories.edges.map(({ node}) => ( 
-                    <Segment color='orange'>
+                    <Segment color='olive'>
                         <div key={node.id} className="RepositoryItem">
                             <RepositoryItem {...node} />
                         </div>
@@ -48,7 +48,7 @@ const RepositoryList = ({ repositories, loading, fetchMore }) =>
             ): (
                 repositories.pageInfo.hasNextPage && (
                     <Button
-                        inverted color='orange'
+                        inverted color='olive'
                         type="button"
                         onClick={ () => 
                             fetchMore({ 

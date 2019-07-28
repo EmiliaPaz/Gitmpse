@@ -13,14 +13,34 @@ const REPOSITORY_FRAGMENT = gql`
             login
             url
         }
-        stargazers {
+        stargazers(first: 5) {
+            edges{
+                node {
+                    name
+                }
+            }
             totalCount
-        }
+          }
         viewerHasStarred
         watchers {
             totalCount
         }
         viewerSubscription
+        forkCount
+        createdAt
+        updatedAt
+        languages(
+            first: 5
+            orderBy: { direction: DESC, field: SIZE }
+        ){
+            edges {
+                node {
+                    id
+                    name
+                    color
+                }
+            }
+        }
     }
 `;
 
