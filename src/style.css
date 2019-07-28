@@ -19,25 +19,6 @@ h1 {
     color: #F39C12;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 34px;
-  margin: 5px 0;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 27px;
-  margin: 5px 0;
-}
-
-ul,
-li {
-  list-style: none;
-  padding-left: 0;
-}
 
 a {
   text-decoration: none;
@@ -55,6 +36,3 @@ a:active {
   text-decoration: none;
 }
 
-pre {
-  white-space: pre-wrap;
-}
