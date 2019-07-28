@@ -1,3 +1,7 @@
-.subheader{
+.ui.olive.header {
+    font-size: 40px;
+}
+
+h1.ui.header .sub.header{
     color: white;
 }

@@ -64,25 +64,22 @@ const RepositoryItem = ({
             </Header>
 
             
-
-            
-
             <Container className="RepositoryItem-information">
                 <Grid columns={2} relaxed='very'>
                     <Grid.Column>
-                        <p>Details</p> 
+                        <h3>Details</h3> 
                         <List as='ol'>
                             <List.Item as='li' value='-'>
-                                Owner:  <a href={owner.url}>{owner.login}</a>
+                                <h4>Owner: </h4>  <a href={owner.url}>{owner.login}</a>
                             </List.Item>
                             <List.Item as='li' value='-'>
-                                Date created: {createdAt}
+                                <h4> Date created: </h4> {createdAt}
                             </List.Item>
                             <List.Item as='li' value='-'>
-                                Date last update: {updatedAt}
+                                <h4> Date last update: </h4> {updatedAt}
                             </List.Item>
                             <List.Item as='li' value='-'>
-                                Languages:
+                                <h4> Languages: </h4>
                                 <List.Item as='ol'>
                                     {languages.edges.map(({node}) => ( 
                                         <List.Item as='li' value='+'>
@@ -96,13 +93,13 @@ const RepositoryItem = ({
                     </Grid.Column>
 
                     <Grid.Column>
-                        <p>Stats</p> 
+                        <h3>Stats</h3> 
                         <List as='ol'>
                             <List.Item as='li' value='-'>
-                                Fork count: {forkCount}
+                                <h4> Fork count: </h4> {forkCount}
                             </List.Item>
                             <List.Item as='li' value='-'>
-                                Stars count: {stargazers.totalCount} 
+                                <h4> Stars count: </h4> {stargazers.totalCount} 
                                 { (stargazers.totalCount >0) ? (
                                         
                                         <List.Item as='ol'>

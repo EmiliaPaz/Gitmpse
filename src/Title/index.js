@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Header, Segment } from 'semantic-ui-react'
+import { Container, Header, Input, Button } from 'semantic-ui-react'
 import './style.css'
 
 const Title = () => (
@@ -7,7 +7,7 @@ const Title = () => (
         <Container>
             <Header as='h1' color='olive'> 
                 Gitmpse 
-                <Header.Subheader className="subheader">A GitHub glimpse</Header.Subheader>
+                <Header.Subheader> A GitHub repositories glimpse</Header.Subheader>
             </Header>
            
         </Container>

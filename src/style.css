@@ -18,26 +18,30 @@ h1 {
     text-align: center;
 }
 
-h4{
-    color: white;
-    text-align: center;
+h3{
+    font-size: 16px;
 }
 
+h4{
+    font-size: 12px;
+    font-weight: bold;
+}
 
 
 a {
-  text-decoration: none;
-  color: #000;
-  opacity: 1;
-  transition: opacity 0.25s ease-in-out;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
 }
 
 a:hover {
-  opacity: 0.35;
-  text-decoration: none;
+    color: #b5cc18;
+    opacity: 0.8;
+    text-decoration: none;
 }
 
 a:active {
-  text-decoration: none;
+    text-decoration: none;
 }
 

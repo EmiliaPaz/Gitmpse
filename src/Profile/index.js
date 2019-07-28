@@ -6,29 +6,6 @@ import RepositoryList, { REPOSITORY_FRAGMENT } from '../Repository';
 import Loading from '../Loading';
 import ErrorMessage from '../Error';
 
-const GET_REPOSITORIES_OF_CURRENT_USER = gql`
-    query($cursor: String){
-        viewer {
-            repositories(
-                first: 5
-                orderBy: { direction: DESC, field: STARGAZERS }
-                after: $cursor
-            ) {
-                edges {
-                    node {
-                        ...repository
-                    }
-                }
-                pageInfo {
-                    endCursor
-                    hasNextPage
-                }
-            }
-        }
-    }
-  ${REPOSITORY_FRAGMENT}
-`;
-
 const GET_REPOSITORIES_OF_USER = gql`
     query($username: String!, $cursor: String){
         user(login: $username) {
@@ -55,31 +32,29 @@ const GET_REPOSITORIES_OF_USER = gql`
 
 
 const Profile = ({ username }) => (
-    <Query 
-        query={GET_REPOSITORIES_OF_CURRENT_USER}
-        notifyOnNetworkStatusChange={true}
-    >
    
-   {/* <Query 
+    <Query 
         query={GET_REPOSITORIES_OF_USER}
         variables={{
             username,
           }}
         notifyOnNetworkStatusChange={true}
-    > */}
+    > 
 
         {({ data, loading, error, fetchMore }) => {
             if (error) {
                 return <ErrorMessage error={error} />;
             }
 
-            const { viewer } = data;
+            const { user } = data;
 
-            if (loading && !viewer) {
+            if (loading && !user) {
                 return <Loading />;
             }
 
-            return <RepositoryList repositories={viewer.repositories} fetchMore={fetchMore} />;
+            return (
+                <RepositoryList repositories={user.repositories} fetchMore={fetchMore} />
+            )
         }}
     </Query>
 );
