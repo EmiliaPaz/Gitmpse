@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/gitmpse/static/css/main.cfeef68f.chunk.css",
+    "main.js": "/gitmpse/static/js/main.40976b9d.chunk.js",
+    "main.js.map": "/gitmpse/static/js/main.40976b9d.chunk.js.map",
+    "runtime~main.js": "/gitmpse/static/js/runtime~main.72e1dc04.js",
+    "runtime~main.js.map": "/gitmpse/static/js/runtime~main.72e1dc04.js.map",
+    "static/css/2.e237c168.chunk.css": "/gitmpse/static/css/2.e237c168.chunk.css",
+    "static/js/2.7ff508c5.chunk.js": "/gitmpse/static/js/2.7ff508c5.chunk.js",
+    "static/js/2.7ff508c5.chunk.js.map": "/gitmpse/static/js/2.7ff508c5.chunk.js.map",
+    "index.html": "/gitmpse/index.html",
+    "precache-manifest.b2db5a538929c57ce3fad6e9f5666391.js": "/gitmpse/precache-manifest.b2db5a538929c57ce3fad6e9f5666391.js",
+    "service-worker.js": "/gitmpse/service-worker.js",
+    "static/css/2.e237c168.chunk.css.map": "/gitmpse/static/css/2.e237c168.chunk.css.map",
+    "static/css/main.cfeef68f.chunk.css.map": "/gitmpse/static/css/main.cfeef68f.chunk.css.map",
+    "static/media/semantic.min.css": "/gitmpse/static/media/outline-icons.ef60a4f6.woff"
+  }
+}
